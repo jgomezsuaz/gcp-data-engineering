@@ -1,0 +1,45 @@
+{
+  "type": "record",
+  "name": "Avro",
+  "fields": [
+    {
+      "name": "sensor",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "co",
+      "type": "float"
+    },
+    {
+      "name": "humidity",
+      "type": "float"
+    },
+    {
+      "name": "light",
+      "type": "boolean"
+    },
+    {
+      "name": "lpg",
+      "type": "float"
+    },
+    {
+      "name": "motion",
+      "type": "boolean"
+    },
+    {
+      "name": "smoke",
+      "type": "float"
+    },
+    {
+      "name": "temp",
+      "type": "float"
+    }
+  ]
+}

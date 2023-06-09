@@ -1,0 +1,9 @@
+setuptools
+wheel
+apache_beam
+apache-beam[gcp]
+apache-beam[interactive]
+avro
+fastavro
+google-cloud-storage
+google-cloud-pubsub
