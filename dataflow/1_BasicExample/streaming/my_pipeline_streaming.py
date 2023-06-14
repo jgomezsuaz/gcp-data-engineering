@@ -182,7 +182,7 @@ def run():
         )
 
     (parsed_msgs
-        | "WindowByMinute" >> beam.WindowInto(beam.window.FixedWindows(15))
+        | "WindowByMinute" >> beam.WindowInto(beam.window.FixedWindows(60))
         | 'Get temperatures' >> beam.Map(lambda data: data.temp)
         | 'CalculateAverage' >> beam.CombineGlobally(AverageAndCountCombineFn()).without_defaults()
         | "AddWindowTimestamp" >> beam.ParDo(GetTimestampFn())
